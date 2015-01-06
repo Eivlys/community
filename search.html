@@ -1,0 +1,45 @@
+<!--zhangshiyao-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>小区选择</title>
+    <link href="css/search.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="search" >
+        <form class="city_src" id="city_src" action ="">
+            <div class="form_wrap">
+                <div class="city_slc">
+                    <select class="province" id="province" onchange="select()" name=""></select>
+                    <select class="city" id="city" name=""></select>
+                </div>
+                <div class="input_src">
+                    <input class="keyword" type="search" id="searchCity" placeholder="请输入小区名称">
+                    <input class="submit" type="submit" id="submit" >
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="result">
+        <div class="src_result" id="src_result">
+            <div class="img">
+                <img src="" alt="小区图片">
+            </div>
+            <div class="address">
+                <p class="com_name">小区名称</p>
+                <p class="add_detail">详细地址</p>
+            </div>
+            <div class="button">
+                <input type="button" class="follow" value="关注">
+            </div>
+        </div>
+    </div>
+
+<script src="javascript/citypick.js"></script>
+</body>
+</html>

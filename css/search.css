@@ -1,0 +1,209 @@
+/*zhangshiyao */
+
+/*------------------ 小区搜索 ------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: auto;
+    background-color:rgba(246,246,246,1);
+}
+
+.search{
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    border: none;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+}
+
+.search .form_wrap{
+    width: 90%;
+    height: 100%;
+    margin: 20px auto;
+}
+
+.search .form_wrap .city_slc{
+    width: 40%;
+    border: none;
+    float: left;
+    position: relative;
+
+}
+
+.search .form_wrap .input_src{
+    width: 56%;
+    border: none;
+    float: left;
+    position: relative;
+}
+
+.city_slc .province,.city_slc .city{
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.input_src{
+    border: 1px solid #ccc;
+    margin: 4px 5px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+select{
+    height: 100%;
+    width: 100%;
+    border: none;
+    display: inline;
+}
+
+.city_slc .city,.city_slc .province{
+    width: 47%;
+    margin: 5px 0;
+}
+
+.keyword{
+    width: 75%;
+    height: 100%;
+    border: none;
+}
+
+.submit{
+    width: 20%;
+    height: 90%;
+    font-size: 14px;
+    font-family: "Microsoft Yehei", Helvatica, Arial, sans-serif;
+    border: none;
+    background-color: #cccccc;
+    border-radius: 5px;
+}
+
+.result{
+    width:100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.src_result{
+    width: 90%;
+    height: 60px;
+    margin: 0 auto;
+    border-bottom:1px solid #cccccc;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+.src_result .img{
+    width: 25%;
+    height: 55px;
+    margin: 0;
+    float: left;
+    position: relative;
+}
+
+.src_result .address{
+    width: 55%;
+    height: 55px;
+    margin: 0;
+    float: left;
+    position: relative;
+}
+
+.src_result .button{
+    width: 15%;
+    height: 55px;
+    margin: 0;
+    float: right;
+    position: relative;
+}
+
+.src_result .address .com_name{
+    font-size: 16px;
+    color: #444;
+    font-family: "Microsoft Yehei", Helvatica, Arial, sans-serif;
+    margin: 10px;
+}
+
+.src_result .address .add_detail{
+    font-size: 12px;
+    color: #444;
+    font-family: "Microsoft Yehei", Helvatica, Arial, sans-serif;
+    margin: 10px;
+}
+
+.src_result .button .follow{
+    border: 1px solid rgba(75,193,210,1);
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 45px;
+    height: 25px;
+    margin-top: 15px;
+}
+
+/*------------------------- 用户中心 --------------------------------*/
+
+.name,.num,.com,.setting{
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+hr{
+    width: 95%;
+    margin: 0 auto;
+    border-top: 1px;
+    border-color: #cccccc;
+}
+
+.name,.setting{
+    margin: 20px 0;
+}
+
+.user_page p{
+    font-family: "Microsoft Yehei", "Lantinghei SC", "Hiragino Sans GB", Helvatica, Arial, sans-serif;
+    font-size: 16px;
+    color: #444;
+    padding: 15px;
+    float: left;
+    position: relative;
+}
+
+.name .fa.fa-user{
+    margin-right: 10px;
+    color: rgba(75,193,210,1);
+    float: left;
+    position: relative;
+}
+
+a .fa.fa-chevron-right{
+    text-decoration: none;
+    color: #777777;
+    font-size: 18px;
+    padding: 18px;
+    float: right;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
