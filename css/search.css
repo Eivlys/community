@@ -64,6 +64,7 @@ select{
     width: 100%;
     border: none;
     display: inline;
+    background-color: #ffffff;
 }
 
 .city_slc .city,.city_slc .province{
@@ -83,7 +84,8 @@ select{
     font-size: 14px;
     font-family: "Microsoft Yehei", Helvatica, Arial, sans-serif;
     border: none;
-    background-color: #cccccc;
+    background-color:rgba(75,193,210,1);
+    color: #ffffff;
     border-radius: 5px;
 }
 
