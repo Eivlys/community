@@ -221,7 +221,7 @@ body{
     -webkit-box-pack:center;
 }
 
-.suggest .content .con_title{
+.suggest .content .con_title,.help_wrap .con_title{
     font-family: "Microsoft Yehei", "Lantinghei SC", "Hiragino Sans GB", Helvatica, Arial, sans-serif;
     font-size: 20px;
     margin: 10px;
@@ -248,6 +248,10 @@ form .part .label{
     font-family: "Microsoft Yehei", "Lantinghei SC", "Hiragino Sans GB", Helvatica, Arial, sans-serif;
     font-size: 16px;
     margin: 5px;
+}
+
+form .part textarea{
+    height: 70px;
 }
 
 form .type{
@@ -278,7 +282,7 @@ form .btn{
 
 }
 
-form .submit{
+.submit{
     background-color: rgba(75,193,210,1);
     width: 70%;
     border: none;
@@ -288,12 +292,88 @@ form .submit{
     color: #ffffff;
 }
 
+/*----------- 反馈 -------------*/
+.fb_wrap{
+    width: 100%;
+    height: auto;
+}
 
+.tips,.feedback textarea{
+    width: 95%;
+    margin:10px auto 10px auto;
+    padding: 20px 5px;
+    border: 1px solid #cccccc;
+}
 
+.tips{
+    height: 30%;
+}
 
+.tips p,.fb_tl,.feedback textarea,.feedback a{
+    font-family: "Microsoft Yehei", "Lantinghei SC", "Hiragino Sans GB", Helvatica, Arial, sans-serif;
+    font-size: 16px;
+    color: #444444;
+}
 
+.feedback{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
 
+.fb_tl{
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    font-size: 18px;
+}
 
+.feedback textarea{
+    height: 200px;
+}
+
+.feedback .submit{
+    margin: 5px auto;
+    height: 30px;
+}
+
+.feedback a {
+    float: right;
+    position: relative;
+    color: rgba(75,193,210,1);
+    margin-right: 15%;
+    text-decoration: none;
+}
+
+/*-------------- help ---------------*/
+.help_wrap{
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+.help_wrap .entry{
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+.help_wrap .con_list{
+    width: 95%;
+    border: none;
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 5px auto;
+}
+
+.help_wrap .list{
+    line-height: 20px;
+    font-family: "Microsoft Yehei", "Lantinghei SC", "Hiragino Sans GB", Helvatica, Arial, sans-serif;
+    font-size: 16px;
+    color: #444444;
+    margin: 5px auto 5px 15px;
+    padding: 10px auto;
+}
 
 
 
