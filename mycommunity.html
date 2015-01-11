@@ -1,0 +1,92 @@
+<!-- ruanhui -->
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>viewmycommunity</title>
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<script type="text/javascript" src="javascript/jquery.min.js"></script>
+</head>
+
+<body>
+<section class="page set_pg myc_pg">
+    <div class="banner"><img src="images/mycommunityidex_03.gif" /></div>
+	<div class="notice">物业通知</div>
+    <div class="menu"><a href="#" class="cur">最近30天</a><a  href="#">全部</a></div>
+    <section class="content_box">
+        <div class ="content_r">
+            <img src="images/notice.gif" width="30" height="30" >
+            <dl class="main_r">
+                <dt class="name"><a href="#">30试水通知</a></dt>
+                <dd class="addition">2014年11月29日</dd>
+            </dl>
+            <span class="guanfan"></span>
+        </div>
+        <div class ="content_r">
+            <img src="images/notice.gif" width="30" height="30" >
+            <dl class="main_r">
+                <dt class="name"><a href="#">试水通知</a></dt>
+                <dd class="addition">2014年11月29日</dd>
+            </dl>
+            <span class="guanfan"></span>
+        </div>
+        <div class ="content_r">
+            <img src="images/notice.gif" width="30" height="30" >
+            <dl class="main_r">
+                <dt class="name"><a href="#">试水通知</a></dt>
+                <dd class="addition">2014年11月29日</dd>
+            </dl>
+            <span class="guanfan"></span>
+        </div>
+    </section>
+    <section class="content_box">
+        <div class ="content_r">
+            <img src="images/notice.gif" width="30" height="30" >
+            <dl class="main_r">
+                <dt class="name"><a href="#">all试水通知</a></dt>
+                <dd class="addition">2014年11月29日</dd>
+            </dl>
+            <span class="guanfan"></span>
+        </div>
+        <div class ="content_r">
+            <img src="images/notice.gif" width="30" height="30" >
+            <dl class="main_r">
+                <dt class="name">试水通知</dt>
+                <dd class="addition">2014年11月29日</dd>
+            </dl>
+            <span class="guanfan"></span>
+        </div>
+        <div class ="content_r">
+            <img src="images/notice.gif" width="30" height="30" >
+            <dl class="main_r">
+                <dt class="name">试水通知</dt>
+                <dd class="addition">2014年11月29日</dd>
+            </dl>
+            <span class="guanfan"></span>
+        </div>
+    </section>
+</section>
+<script type="text/javascript">
+		var index = 0;
+		
+		var letter =$( '.menu' ).find('a');
+		
+		var letterTe = $('.content_box');
+		
+		letterTe.eq(1).hide();
+				
+		letter.bind('click',function(){
+			
+			var index = letter.index(this);
+			
+			$(this).addClass('cur').siblings().removeClass('cur');
+		
+			letterTe.eq(index).show().siblings('.content_box').hide();
+			
+		});
+</script>
+</body>
+</html>
