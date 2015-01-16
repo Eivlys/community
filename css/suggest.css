@@ -73,11 +73,6 @@ body{
     box-flex:1.0;
 }
 
-.content .con_wrap{
-    -webkit-box-flex:1.0;
-    box-flex:1.0;
-}
-
 .content .con_wrap .con_wrap_v{
     width: 100%;
     height: 300px;
@@ -111,7 +106,7 @@ body{
     margin: 5px 5px 0px 5px;
 }
 
-.content .con_wrap .con_wrap_v .con_eme,.content .con_wrap .con_wrap_v .con_hotl{
+.content .con_wrap .con_wrap_v .con_eme,.content .con_wrap .con_wrap_v .con_hotl,.content .con_wrap .con_wrap_v .con_change{
     -webkit-box-flex:1.0;
     box-flex:1.0;
     display:-webkit-box;
@@ -133,6 +128,11 @@ body{
 
 .content .con_wrap .con_wrap_v .con_hotl{
     background-color: rgba(242,137,35,1);
+    margin: 5px 5px 0px 0px;
+}
+
+.content .con_wrap .con_wrap_v .con_change{
+    background-color: rgba(235,190,10,1);
     margin: 5px 5px 0px 0px;
 }
 
@@ -177,10 +177,6 @@ body{
 
 .navbar li a.select{
     color: rgba(75,193,210,1);
-}
-
-.navbar li a i.fa.fa-envelope{
-    color:rgba(75,193,210,1) ;
 }
 
 /* ----------- 社区意见板页 --------------- */
@@ -290,6 +286,37 @@ form .btn{
     font-family: "Microsoft Yehei", "Lantinghei SC", "Hiragino Sans GB", Helvatica, Arial, sans-serif;
     font-size: 16px;
     color: #ffffff;
+}
+
+.toast{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    top:180px;
+    z-index: 1000;
+}
+
+.toast p.toast_text{
+    font-size: 16px;
+    font-family: "Microsoft Yehei", Helvatica, Arial, sans-serif;
+    color: #ffffff;
+    background-color: #777777;
+    padding: 20px;
+    margin: auto 100px;
+    border-radius: 10px;
+}
+
+.toast.success p.toast_text{
+    width: 160px;
+    height: 18px;
+}
+
+.toast.fail p.toast_text{
+    width: 60%;
+    height: 18px;
+    margin: auto 50px;
 }
 
 /*----------- 反馈 -------------*/

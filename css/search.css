@@ -105,6 +105,11 @@ select{
     border-top: none;
 }
 
+.src_result a{
+    text-decoration: none;
+    color: #444;
+}
+
 .src_result .img{
     width: 25%;
     height: 55px;
@@ -213,7 +218,48 @@ a .fa.fa-chevron-right{
     position: relative;
 }
 
+.navbar{
+    width: 100%;
+    height: 50px;
+    border: 0px;
+    margin:0;
+    position:fixed;
+    bottom: 5px;
+}
 
+.navbar ul{
+    margin: 5px 0px auto 0px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-top: 5px solid #fff;
+}
+
+.navbar li{
+    margin: auto 0px;
+    border: none;
+    width: 25%;
+    height: 100%;
+    display: inline-block;
+    -webkit-box-flex: 1;
+    text-align: center;
+    font-size: 14px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar li a{
+    background-color: #fff;
+    color:rgba(189,189,189,1);
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar li a.select{
+    color: rgba(75,193,210,1);
+}
 
 
 

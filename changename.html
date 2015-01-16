@@ -6,16 +6,41 @@
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
 <meta name="keywords" content="">
 <meta name="description" content="">
-<title>viewmycommunity</title>
+<title>修改昵称</title>
 <link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 <section class="page set_pg myc_pg">
-	<a href="javscript:;" class="btn_keep">保存</a>
+	<p id="save" class="btn_keep" >保存</p>
     <div class="content_z">
-        <input type="text" >
+        <input id="name" type="text" name="" value="">
         <p class="text">取个好听的名字让朋友记住你。</p>
     </div>
 </section>
+<div class="toast success" id="success" style="display: none">
+    <p class="toast_text">昵称修改成功！</p>
+</div>
+<div class="toast fail" id="fail" style="display:none">
+    <p class="toast_text">抱歉，昵称修改失败</p>
+</div>
+</body>
+<script src="javascript/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#save').click(function(){
+            $(this).val('已保存');
+            $(this).css('color','#cccccc');
+            $('#success').fadeIn(200);
+            setTimeout(function(){
+                $('#success').fadeOut(500);
+            },1000);
+            //如果提交失败，显示 id=“fail”的div
+//                $('#fail').fadeIn(200);
+//                    setTimeout(function(){
+//                    $('#fail').fadeOut(500);
+//                    },1000);
+        });
+    });
+</script>
 </html>

@@ -98,9 +98,10 @@ input{
     width: 100%;
     height: 100%;
     margin: 0;
-    background-color: rgba(230,230,230,0.7);
     text-align: center;
-    z-index: 1;
+    position: absolute;
+    top:180px;
+    z-index: 1000;
 }
 
 .toast p.toast_text{
@@ -109,6 +110,17 @@ input{
     color: #ffffff;
     background-color: #777777;
     padding: 20px;
-    margin: auto 50px;
+    margin: auto 100px;
     border-radius: 10px;
+}
+
+.toast.success p.toast_text{
+    width: 160px;
+    height: 18px;
+}
+
+.toast.fail p.toast_text{
+    width: 60%;
+    height: 18px;
+    margin: auto 50px;
 }
