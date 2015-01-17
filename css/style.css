@@ -46,8 +46,8 @@ html,body{ height:100%; -webkit-font-smoothing:antialiased;  -webkit-text-size-a
 .home_se .btn_se{ display:inline-block; width:14px; height:14px; background:url(../images/home1_se.png) no-repeat left top; background-size:100%; vertical-align:middle;}
 
 .notice{ background-color:#EFEFEF; font-size:20px; color:#3a9caa; padding-left:10px; line-height:40px; height:35px;}
-.menu{ border-bottom:1px solid #EFEFEF; margin-top:10px; line-height:20px; height:20px;}
-.menu a{ font-size:14px; width:50%; display:inline-block; color:#2d2d2d; text-align:center;}
+.menu{ border-bottom:1px solid #EFEFEF; margin-top:10px; line-height:25px; height:25px;}
+.menu a{ font-size:16px; width:50%; display:inline-block; color:#2d2d2d; text-align:center;margin: 0;border: none;}
 .main_r a{ color:#333}
 .menu .cur{color:#2d2d2d; border-bottom:3px solid #09B7C4; line-height:18px;}
 .content_r { display:block; padding:10px 20px; border-bottom:1px solid #e5e5e5; overflow:hidden; height:40px;}
