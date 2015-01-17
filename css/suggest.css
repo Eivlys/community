@@ -304,19 +304,23 @@ form .btn{
     color: #ffffff;
     background-color: #777777;
     padding: 20px;
-    margin: auto 100px;
     border-radius: 10px;
 }
 
 .toast.success p.toast_text{
     width: 160px;
     height: 18px;
+    left: 50%;
+    margin-left: -80px;
+    position: absolute;
 }
 
 .toast.fail p.toast_text{
-    width: 60%;
+    width: 200px;
     height: 18px;
-    margin: auto 50px;
+    left: 50%;
+    margin-left: -100px;
+    position: absolute;
 }
 
 /*----------- 反馈 -------------*/
