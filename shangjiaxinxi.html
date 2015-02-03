@@ -34,9 +34,10 @@
 <div class="content_wrap">
 	<div class="title_wrap">
     <span class="tit">描述</span>
+    <span class="addC_btn"><a id="edit_des" href="javascript:void(0)" onclick="edit_des()"><i>+</i>修改</a></span>
   </div>
   <div class="text_wrap">
-  	<textarea cols="" rows="" class="txar">商家自行输入文字内容</textarea>
+  	<textarea cols="" rows="" id="des_con" class="txar" disabled="disabled" placeholder="请输入描述的内容"></textarea>
   </div>
 </div>
 <!--/商家描述-->
@@ -48,17 +49,17 @@
   </div>
   <ul class="price_list">
     <li id="list1"><div class="plk_a">
-      <input class="del" name="del" onclick="del('list1')" value="删除">
+      <input type="button" class="del" name="del" value="删除" onclick="dele('list1')">
       <a class="edp_a"><span class="mob">11</span>
       <span class="tit">招牌鸭脖</span></a>
     </div></li>
     <li id="list2"><div class="plk_a">
-      <input type="submit" class="del" name="del" onclick="del('list2')"  value="删除">
+      <input type="button" class="del" name="del" onclick="dele('list2')"  value="删除">
       <a class="edp_a"><span class="mob">12</span>
       <span class="tit">招牌鸭脖</span></a>
     </div></li>
     <li id="list3"><div href="" class="plk_a">
-      <input type="submit" class="del" name="del" onclick="del('list3')"  value="删除">
+      <input type="button" class="del" name="del" onclick="dele('list3')"  value="删除">
       <a class="edp_a"><span class="mob">13</span>
       <span class="tit">招牌鸭脖</span></a>
     </div></li>
@@ -67,16 +68,45 @@
 <!--/商家商品价格-->
 <script src="javascript/jquery-1.7.2.min.js"></script>
 <script type="text/javascript">
-function edit(){
+    var des = $('#edit_des');
+    var con = $('#des_con');
     var del = $('.del');
     var edp = $('.edp_a');
+    var oper = $('#oper_btn');
+function edit_des(){
+    //修改描述
+    des.text('保存') ;
+    des.attr('onclick','save_des()');
+    con.attr('disabled',false);
+}
+
+function save_des(){
+    //保存描述修改
+    des.html("<i>+</i>修改");
+    des.attr('onclick','edit_des()');
+    con.attr('disabled',true);
+}
+
+function edit(){
+    //编辑价格条目
+    oper.text('保存');
+    oper.attr('onclick','save()');
     del.css({'display':'block'});
     edp.attr('href','tianjia.html');
 }
 
-function del(id){
-    var list = document.getElementById(id); //每条价格条目id作为参数传入
+function dele(id){
+    //删除价格条目
+    var list = document.getElementById(id); //id为每条价格条目的id
     list.style.display = "none";
+}
+
+function save(){
+    //保存价格条目编辑
+    oper.text('编辑');
+    oper.attr('onclick','edit()');
+    del.css({'display':'none'});
+    edp.removeAttr('href');
 }
 
 </script>
