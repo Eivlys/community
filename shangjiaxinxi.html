@@ -9,9 +9,11 @@
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/suggest.css" rel="stylesheet" type="text/css">
 </head>
-<body class="shop_body">
+<body class="addC_body">
 <div class="infoTit">
+	<a href="service.html"><span class="back">&lt;</span></a>
     <h1 class="tit">商家店名</h1>
+    <a href="#" class="oper_btn" id="oper_btn" onclick="edit()">编辑</a>
 </div>
 <!--/title-->
 
@@ -23,7 +25,7 @@
       <p class="site"> 海淀区中关村大街109号新中关购物中心B11楼B1160号</p>
     </dd>
     <dd class="shop_tel">
-    	<a href="#"></a>
+    	<a href="tel:"><i class="fa fa-phone fa-2x"></i></a> <!--填写电话号码-->
     </dd>
   </dl>
 </div>
@@ -34,37 +36,49 @@
     <span class="tit">描述</span>
   </div>
   <div class="text_wrap">
-  	<p>请提供具体的东西，因为这有图片，包括你这边信息的可点击，包括地图也是可以点击的么同理之前的那个便民信息页面</p>
+  	<textarea cols="" rows="" class="txar">商家自行输入文字内容</textarea>
   </div>
 </div>
 <!--/商家描述-->
 
 <div class="content_wrap">
 	<div class="title_wrap">
-        <span class="tit">价格表</span>
-        <span class="more"><a href="pricelist.html" class="lk_a">全部</a></span>
-    </div>
-    <ul class="price_list">
-  	    <li><a href="#" class="plk_a">
-    	<span class="mob">12</span>
-    	<span class="tit">招牌鸭脖</span>
-        </a></li>
-        <li><a href="#" class="plk_a">
-    	<span class="mob">12</span>
-    	<span class="tit">招牌鸭脖</span>
-        </a></li>
-        <li><a href="#" class="plk_a">
-    	<span class="mob">12</span>
-    	<span class="tit">招牌鸭脖</span>
-        </a></li>
-    </ul>
+    <span class="tit">价格表</span>
+    <span class="addC_btn"><a href="tianjia.html" class="lk_a"><i>+</i>添加</a></span>
+  </div>
+  <ul class="price_list">
+    <li id="list1"><div class="plk_a">
+      <input class="del" name="del" onclick="del('list1')" value="删除">
+      <a class="edp_a"><span class="mob">11</span>
+      <span class="tit">招牌鸭脖</span></a>
+    </div></li>
+    <li id="list2"><div class="plk_a">
+      <input type="submit" class="del" name="del" onclick="del('list2')"  value="删除">
+      <a class="edp_a"><span class="mob">12</span>
+      <span class="tit">招牌鸭脖</span></a>
+    </div></li>
+    <li id="list3"><div href="" class="plk_a">
+      <input type="submit" class="del" name="del" onclick="del('list3')"  value="删除">
+      <a class="edp_a"><span class="mob">13</span>
+      <span class="tit">招牌鸭脖</span></a>
+    </div></li>
+  </ul>
 </div>
 <!--/商家商品价格-->
+<script src="javascript/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+function edit(){
+    var del = $('.del');
+    var edp = $('.edp_a');
+    del.css({'display':'block'});
+    edp.attr('href','tianjia.html');
+}
 
-<div class="tel_box">
-	<a href="tel:"><span class="txt">拨打商家电话</span></a>
-        <!--tel后填写电话号码-->
-</div>
-<!--/商家电话-->
+function del(id){
+    var list = document.getElementById(id); //每条价格条目id作为参数传入
+    list.style.display = "none";
+}
+
+</script>
 </body>
 </html>
