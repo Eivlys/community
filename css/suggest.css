@@ -178,7 +178,7 @@ body{
 .navbar li{
     margin: auto 0px;
     border: none;
-    width: 25%;
+    width: 33.33%;
     height: 100%;
     display: inline-block;
     -webkit-box-flex: 1;

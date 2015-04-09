@@ -107,7 +107,7 @@ select{
 
 .src_result a{
     text-decoration: none;
-    color: #444;
+    color: rgba(75,193,210,1);
 }
 
 .src_result .img{
@@ -116,6 +116,8 @@ select{
     margin: 0;
     float: left;
     position: relative;
+    color: rgba(75,193,210,1);
+    text-align: center;
 }
 
 .src_result .address{
@@ -239,7 +241,7 @@ a .fa.fa-chevron-right{
 .navbar li{
     margin: auto 0px;
     border: none;
-    width: 25%;
+    width: 33.33%;
     height: 100%;
     display: inline-block;
     -webkit-box-flex: 1;
